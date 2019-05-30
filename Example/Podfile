@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'QDAliPaySDK_Example' do
+  pod 'QDAliPaySDK', :path => '../'
+
+  target 'QDAliPaySDK_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
